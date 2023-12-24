@@ -35,8 +35,8 @@
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
-      <artifactId>javafx-controls</artifactId>
-      <version>11.0.2</version>
+      <artifactId>javafx-fxml</artifactId>
+      <version>17.0.1</version>
     </dependency>
   </dependencies>
   <build>
@@ -45,6 +45,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <version>${maven-enforcer-plugin.version}</version>
+
         <executions>
           <execution>
             <goals>
@@ -60,6 +61,14 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+          <artifactId>javafx-maven-plugin</artifactId>
+          <configuration>
+						<mainClass>escapegames.App</mainClass>
+					</configuration>
+					<groupId>org.openjfx</groupId>
+					<version>0.0.3</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
