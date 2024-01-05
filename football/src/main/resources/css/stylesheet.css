@@ -1,0 +1,8 @@
+.menu {
+    -fx-background-color: #000;
+}
+
+.menu Button {
+    -fx-background-color: clear;
+}
+
