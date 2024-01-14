@@ -1,5 +1,9 @@
 package escapegames.controllers;
 
+import java.io.IOException;
+
+import escapegames.App;
+import escapegames.SceneManager.GameUi;
 import javafx.fxml.FXML;
 
 public class StartMenuController extends Controllers{
@@ -10,8 +14,8 @@ public class StartMenuController extends Controllers{
     }
 
     @FXML
-    private void startGame() {
-        System.out.println("click");
+    private void startGame() throws IOException {
+        App.setUi(GameUi.LOCKERROOM);
     }
     
 }

@@ -1,4 +1,4 @@
-football/target/*
+target/*
 bin/
 tmp/
 *.class
