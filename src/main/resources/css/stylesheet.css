@@ -6,3 +6,7 @@
     -fx-background-color: clear;
 }
 
+Pane {
+    -fx-width: 100%;
+    -fx-height: 100%;
+}

@@ -21,11 +21,9 @@ public  class App extends Application{
     public void start(final Stage stage) throws IOException {
       SceneManager.addGameUi(GameUi.MENU,loadFxml("startmenu"), fxmlLoader );
       SceneManager.addGameUi(GameUi.LOCKERROOM, loadFxml("lockerroom"), fxmlLoader);
-      scene = new Scene(SceneManager.getUi(GameUi.MENU), 800, 596);
+      scene = new Scene(SceneManager.getUi(GameUi.MENU));
       stage.setScene(scene);
 
-      stage.setMinHeight(596);
-      stage.setMinWidth(800);
       stage.setResizable(true);
       stage.show();
     }
