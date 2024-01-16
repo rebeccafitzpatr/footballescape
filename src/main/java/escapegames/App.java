@@ -23,8 +23,9 @@ public  class App extends Application{
       SceneManager.addGameUi(GameUi.LOCKERROOM, loadFxml("lockerroom"), fxmlLoader);
       scene = new Scene(SceneManager.getUi(GameUi.MENU));
       stage.setScene(scene);
+      stage.sizeToScene();
 
-      stage.setResizable(true);
+      stage.setResizable(false);
       stage.show();
     }
 
@@ -39,5 +40,7 @@ public  class App extends Application{
 
     public static void setUi(GameUi ui) {
       scene.setRoot(SceneManager.getUi(ui));
+      Stage stage = (Stage) scene.getWindow();
+      stage.sizeToScene();
     }
 }
